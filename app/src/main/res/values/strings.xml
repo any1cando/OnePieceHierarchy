@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OnePieceHierarchy</string>
+    <string name="top_title">Выберите раздел:</string>
+    <string name="next">Далее</string>
+</resources>

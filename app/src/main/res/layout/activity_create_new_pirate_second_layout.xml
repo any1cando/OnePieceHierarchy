@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_main">
+
+    <ImageButton
+        android:id="@+id/arrowBackToCreateNewPirate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"
+        android:contentDescription="Вернуться на предыдущий экран"
+        android:onClick="navigateToCreateNewPirate"
+        android:src="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/textViewPirateCrimeHistory"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:gravity="center"
+        android:text="Известные преступления пирата: (опционально)"
+        android:contentDescription="Описание преступлений пирата"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/my_white"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/arrowBackToCreateNewPirate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextPirateCrimeHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="65sp"
+        android:layout_marginTop="25sp"
+        android:gravity="center"
+        android:ems="15"
+        android:inputType="text"
+        android:text=""
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/my_white"
+        android:textSize="20sp"
+        android:hint="Введите преступление(ия) пирата"
+        android:textColorHint="@color/grey_for_hint"
+        android:background="@drawable/edit_text_hint_frame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPirateCrimeHistory"
+        />
+
+    <TextView
+        android:id="@+id/textViewPirateDestiny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45sp"
+        android:gravity="center"
+        android:text="Какая цель у этого пирата? (опционально)"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/my_white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPirateCrimeHistory"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextPirateDestiny"
+        android:layout_width="370sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="25sp"
+        android:gravity="center"
+        android:ems="15"
+        android:inputType="text"
+        android:text=""
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/my_white"
+        android:textSize="20sp"
+        android:hint="Введите мечту пирата"
+        android:textColorHint="@color/grey_for_hint"
+        android:background="@drawable/edit_text_hint_frame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewPirateDestiny"
+        />
+
+    <Button
+        android:id="@+id/buttonToAddNewPirate"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_marginStart="50sp"
+        android:layout_marginEnd="50sp"
+        android:layout_marginBottom="40sp"
+        android:layout_marginTop="580sp"
+        android:text="Создать"
+        android:textAllCaps="false"
+        android:fontFamily="@font/inter_semibold"
+        android:textColor="@color/my_white"
+        android:textSize="20sp"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

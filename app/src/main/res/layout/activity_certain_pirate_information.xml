@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pirates.CertainPirateInformationActivity"
+    android:background="@color/dark_main">
+
+    <ImageButton
+        android:id="@+id/arrowBackToPirateMenuFromCertainPirate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Вернуться на предыдущий экран"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/certainPirateTextViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Имя:"
+        android:textColor="@color/my_white"
+        android:textSize="20sp"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintTop_toBottomOf="@+id/arrowBackToPirateMenuFromCertainPirate"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/certainPirateTextViewNameData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textColor="@color/my_white"
+        android:textSize="20sp"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintStart_toEndOf="@id/certainPirateTextViewName"
+        app:layout_constraintTop_toTopOf="@id/certainPirateTextViewName"
+
+        />
+
+    <TextView
+        android:id="@+id/certainPirateTextViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Возраст:"
+        android:textColor="@color/my_white"
+        android:textSize="20sp"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintTop_toBottomOf="@id/certainPirateTextViewName"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/certainPirateTextViewAgeData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textColor="@color/my_white"
+        android:textSize="20sp"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintStart_toEndOf="@id/certainPirateTextViewAge"
+        app:layout_constraintTop_toTopOf="@id/certainPirateTextViewAge"
+        />
+
+    <TextView
+        android:id="@+id/certainPirateTextViewBounty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        android:text="Награда:"
+        android:textColor="@color/my_white"
+        android:textSize="20sp"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintTop_toBottomOf="@id/certainPirateTextViewAge"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/certainPirateTextViewBountyData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textColor="@color/my_white"
+        android:textSize="18sp"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintStart_toEndOf="@id/certainPirateTextViewBounty"
+        app:layout_constraintTop_toTopOf="@id/certainPirateTextViewBounty"
+        app:layout_constraintBottom_toBottomOf="@id/certainPirateTextViewBounty"
+        />
+
+    <TextView
+        android:id="@+id/certainPirateTextViewDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="30dp"
+        android:text="Наличие ДФ:"
+        android:textSize="20sp"
+        android:textColor="@color/my_white"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/certainPirateTextViewBounty"
+        />
+
+    <TextView
+        android:id="@+id/certainPirateTextViewDFData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textColor="@color/my_white"
+        android:textSize="20sp"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintStart_toEndOf="@id/certainPirateTextViewDF"
+        app:layout_constraintTop_toTopOf="@id/certainPirateTextViewDF"
+        app:layout_constraintBottom_toBottomOf="@id/certainPirateTextViewDF"
+        />
+
+    <TextView
+        android:id="@+id/certainPirateTextViewCrimeHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="История преступлений:"
+        android:textSize="20sp"
+        android:textColor="@color/my_white"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/certainPirateTextViewDF"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/certainPirateTextViewCrimeHistoryData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/my_white"
+        android:textSize="18sp"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintStart_toStartOf="@id/certainPirateTextViewBounty"
+        app:layout_constraintTop_toBottomOf="@id/certainPirateTextViewCrimeHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/certainPirateTextViewDestiny"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Цель пирата:"
+        android:textSize="20sp"
+        android:textColor="@color/my_white"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/certainPirateTextViewCrimeHistoryData"
+        />
+
+    <TextView
+        android:id="@+id/certainPirateTextViewDestinyData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/my_white"
+        android:textSize="18sp"
+        android:fontFamily="@font/inter_semibold"
+        app:layout_constraintStart_toStartOf="@id/certainPirateTextViewBounty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/certainPirateTextViewDestiny"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

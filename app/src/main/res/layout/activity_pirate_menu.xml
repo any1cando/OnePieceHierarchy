@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_main"
+    >
+
+    <ImageButton
+        android:id="@+id/arrowBackToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"
+        android:contentDescription="Вернуться на предыдущий экран"
+        android:onClick="navigateToMenu"
+        android:src="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/chooseCommand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Выберите команду:"
+        android:textColor="@color/my_white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonShowPirateList"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_selector_colour"
+        android:gravity="center"
+        android:text="Показать список пиратов"
+        android:textColor="@color/my_white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseCommand" />
+
+    <Button
+        android:id="@+id/buttonCreateNewPirate"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_selector_colour"
+        android:text="Создать нового пирата"
+        android:textColor="@color/my_white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShowPirateList" />
+
+    <Button
+        android:id="@+id/buttonDeleteThePirate"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/button_selector_colour"
+        android:text="Удалить определенного пирата"
+        android:textSize="20sp"
+        android:textColor="@color/my_white"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/buttonCreateNewPirate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
